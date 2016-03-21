@@ -1,0 +1,74 @@
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.android.application'
+apply plugin: 'com.android.databinding'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "team4.howest.be.androidapp"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+configurations {
+    compile.exclude group: 'stax'
+    compile.exclude group: 'xpp3'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //This library adds support for the Action Bar user interface design pattern.
+    //This library includes support for material design user interface implementations.
+    //This library adds support for the CardView widget
+    //img loading and processing
+    //compile 'com.squareup.retrofit:retrofit:1.6.0'
+    //compile 'com.android.support:cardview-v7:23.0.+'
+    
+
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    //nodig voor Navigation Drawer
+    //nodig voor opengraph
+    compile files('libs/hamcrest-core.jar')
+    compile files('libs/htmlcleaner-2.8.jar')
+    compile files('libs/junit.jar')
+    //website scraper
+    compile files('libs/jsoup-1.8.3.jar')
+
+    compile 'io.reactivex:rxjava:1.0.14'// Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+
+    compile 'com.android.support:design:23.1.0'//nodig voor Navigation Drawer
+
+    
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'com.android.support:design:23.1.1'
+    compile 'org.ocpsoft.prettytime:prettytime:3.2.7.Final'
+    compile 'com.github.clans:fab:1.6.2'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.android.support:preference-v7:23.1.1'
+    compile 'com.google.android.gms:play-services-analytics:8.3.0'
+}
+

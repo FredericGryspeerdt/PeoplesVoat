@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Subscriptions" >
+            <menu>
+                <item android:id="@+id/nav_my_subverses"
+                    android:title="My subverses"/>
+                <item android:id="@+id/nav_manage_subverses"
+                    android:title="Manage subverses"/>
+            </menu>
+        </item>
+        <item android:title="Account" >
+            <menu>
+                <item android:id="@+id/nav_messages"
+                    android:title="Messages"/>
+                <item android:id="@+id/nav_saved_items"
+                    android:title="Saved items"/>
+                <item android:id="@+id/nav_delete_account"
+                    android:title="Delete account"/>
+            </menu>
+        </item>
+        <item android:title="Voat" >
+            <menu>
+                <item android:id="@+id/nav_browse_subverses"
+                    android:title="Browse subverses"/>
+                <item android:id="@+id/nav_search_submissions"
+                    android:title="Search submissions"/>
+                <item android:id="@+id/nav_random_subverse"
+                    android:title="Random subverse"/>
+            </menu>
+        </item>
+        <item android:id="@+id/nav_settings"
+            android:title="Settings" />
+        <item android:id="@+id/nav_help"
+            android:title="Help" />
+        <item android:id="@+id/nav_review_this_app"
+            android:title="Review this app" />
+    </group>
+</menu>

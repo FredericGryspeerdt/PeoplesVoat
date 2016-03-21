@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_visibility" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefShowBiggerFont"
+            android:summary="@string/pref_show_bigger_font_summary"
+            android:title="@string/pref_show_bigger_font_title" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_content" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefShowNSFW"
+            android:summary="@string/pref_show_nsfw_summary"
+            android:title="@string/pref_show_nsfw_title" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_privacy" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefTrackMe"
+            android:summary="@string/pref_track_me_summary"
+            android:title="@string/pref_track_me_title" >
+            </CheckBoxPreference>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_general" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefShowClosePrompt"
+            android:summary="@string/pref_show_close_prompt_summary"
+            android:title="@string/pref_show_close_prompt_title" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

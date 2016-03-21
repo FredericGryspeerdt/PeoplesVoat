@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">People\'s Voat</string>
+    <string name="title_activity_comment">CommentActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Opne!</string>
+    <string name="drawer_close">Closne</string>
+
+    <string name="search_hint">Search for submissions here</string>
+    <string name="search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_search_submission">Search for submissions in the Action Bar above</string>
+    <string name="title_activity_webview">WebviewActivity</string>
+
+    <string name="pref_privacy">Privacy</string>
+    <string name="pref_track_me_summary">Allow the app to track you</string>
+    <string name="pref_track_me_title">Tracking</string>
+
+    <string name="pref_content">Content</string>
+    <string name="pref_show_nsfw_summary">Show content that might be NSFW</string>
+    <string name="pref_show_nsfw_title">Show NSFW</string>
+    <string name="pref_visibility">Visibility</string>
+    <string name="pref_show_bigger_font_title">Bigger font</string>
+    <string name="pref_show_bigger_font_summary">Show bigger letters</string>
+    <string name="pref_show_close_prompt_title">Prompt close</string>
+    <string name="pref_show_close_prompt_summary">Ask for permission before closing</string>
+    <string name="pref_general">General</string>
+
+</resources>

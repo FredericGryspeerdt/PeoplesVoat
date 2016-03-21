@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--SPINNER SUBVERSES
+    <item
+        android:id="@+id/action_navigate"
+        android:title="navigate subverses"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:actionViewClass="android.support.v7.widget.Toolbar"
+        />
+        -->
+
+    <!--SORT-->
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="200"
+        android:title="sort"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom"
+        />
+
+    <!--SEARCH-->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="300"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        />
+
+    <!--SIDEBAR SUBVERSE
+    <item
+        android:id="@+id/action_sidebar"
+        android:title="show sidebar"
+        app:showAsAction="never"
+        />-->
+
+</menu>

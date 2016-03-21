@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_submission"
+    card_view:cardBackgroundColor="@color/cardBackground"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="8dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_user"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgPopupMenu"
+                android:layout_alignParentEnd="false"
+                android:src="@drawable/ic_more_vert"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="false"
+                android:cropToPadding="false"
+                android:padding="19.5dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ForrestFlump"
+                android:id="@+id/tvUser"
+                android:layout_toEndOf="@+id/imgUser"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:textAppearance="@android:style/TextAppearance.Material.Caption"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 hr ago"
+                android:id="@+id/tvTime"
+                android:layout_toEndOf="@+id/textView11"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_alignParentStart="false"
+                android:layout_toStartOf="@+id/imgPopupMenu"
+                android:textAppearance="@android:style/TextAppearance.Material.Caption" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/textView11"
+                android:layout_toEndOf="@+id/tvUser"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textAppearance="@android:style/TextAppearance.Material.Caption" />
+        </RelativeLayout>
+
+        <View style="@style/Divider"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:text="Lorem ipsum dolor sit amet, ius eu agam mucius, eruditi percipit adipiscing usu id. Wisi eripuit dolorum at nam, duo alia melius ea. Vis no Debet senserit maluisset usu at. Mei ne apeirian democritum."
+            android:id="@+id/tvTitle"
+            android:maxLength="200"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="22dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarContent"
+                android:layout_centerInParent="true"
+                android:indeterminate="false" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imgThumbnailNew"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:cropToPadding="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgUpvote"
+                android:src="@drawable/ic_thumb_up"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:padding="19.5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDownVote"
+                android:src="@drawable/ic_thumb_down"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvVoteCount"
+                android:padding="19.5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVoteCount"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgUpvote"
+                android:text="159" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCommentCount"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:autoText="false"
+                android:gravity="right"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="23" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgComments"
+                android:src="@drawable/ic_message"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/tvCommentCount"
+                android:padding="19.5dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

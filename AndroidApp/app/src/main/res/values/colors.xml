@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#B6E3FF</color>
+    <color name="primaryColorDark">#5BACDE</color>
+    <color name="accentColor">#A291FF</color>
+    <color name="bck">#26ffffff</color>
+    <color name="cardBackground">#E3F2FD</color>
+    <color name="cardBackgroundDark">#dae9f2</color>
+    <color name="cardBackgroundNearBlack">#959fa6</color>
+<!--
+    <color name="primaryColor">#052c45</color>
+    <color name="primaryColorDark">#0c1b25</color>
+    <color name="accentColor">#8c3bff</color>
+    <color name="bck">#000000</color>
+    <color name="cardBackground">#b1ad74</color>
+    <color name="cardBackgroundDark">#a49628</color>
+    <color name="cardBackgroundNearBlack">#30592e</color>-->
+</resources>

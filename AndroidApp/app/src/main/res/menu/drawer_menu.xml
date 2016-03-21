@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="Account" >
+            <menu>
+                <item android:id="@+id/nav_log_in"
+                    android:icon="@drawable/icon_log_in"
+                    android:title="Log in"
+                    />
+            </menu>
+        </item>
+        <!--<item android:title="Subscriptions" >
+            <menu>
+                <item android:id="@+id/nav_my_subverses"
+                    android:icon="@drawable/icon_my_subverses"
+                    android:title="My subverses"/>
+                <item android:id="@+id/nav_manage_subverses"
+                    android:icon="@drawable/icon_manage_subverses"
+                    android:title="Manage subverses"/>
+            </menu>
+        </item>-->
+        <item android:title="Voat" >
+            <menu>
+                <item android:id="@+id/nav_browse_subverses"
+                    android:icon="@drawable/icon_browse_subverses"
+                    android:title="Browse subverses"/>
+                <item android:id="@+id/nav_search_submissions"
+                    android:icon="@drawable/icon_search_submissions"
+                    android:title="Search submissions"/>
+                <item android:id="@+id/nav_random_subverse"
+                    android:icon="@drawable/icon_random"
+                    android:title="Random subverse"/>
+            </menu>
+        </item>
+
+        <item android:title="General">
+            <menu>
+                <item android:id="@+id/nav_settings"
+                    android:icon="@drawable/icon_settings"
+                    android:title="Settings" />
+                <item android:id="@+id/nav_help"
+                    android:icon="@drawable/icon_help"
+                    android:title="Info" />
+                <item android:id="@+id/nav_review_this_app"
+                    android:icon="@drawable/icon_review_app"
+                    android:title="Review this app" />
+            </menu>
+        </item>
+
+    </group>
+</menu>

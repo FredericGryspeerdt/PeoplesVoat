@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <import
+            type="android.view.View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <variable
+            name="comment"
+            type="team4.howest.be.androidapp.viewmodel.ItemCommentViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <variable
+            name="handler"
+            type="team4.howest.be.androidapp.CommentsAdapter.ClickHandlers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </data>
+
+    <team4.howest.be.androidapp.view.WrapContentHeightViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/comment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@{comment.level}">
+
+            <LinearLayout
+                android:id="@+id/info_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:background="@{comment.level}"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                >
+
+                <TextView
+                    android:id="@+id/comment_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@{comment.level}"
+                    android:padding="8dip"
+                    android:text="@{comment.userName}"
+                    android:onClick="@{comment.onUserSelected}"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/comment_karma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@{comment.level}"
+                    android:padding="8dip"
+                    android:text="@{comment.karma}"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@{comment.level}"
+                    android:padding="8dip"
+                    android:text="@{comment.date}"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/status_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/info_bar"
+                android:background="@{comment.level}"
+                android:padding="8dip"
+                android:onClick="@{comment.onCollapse}"
+                android:paddingBottom="0dip"
+                android:text="Content"
+                android:textColor="@android:color/primary_text_light"
+                android:linksClickable="false"
+                android:longClickable="false"
+                />
+
+            <TextView
+                android:id="@+id/more_comments"
+                android:layout_width="match_parent"
+                android:onClick="@{comment.onCollapse}"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/status_name"
+                android:layout_marginLeft="40px"
+                android:background="@{comment.level + 1}"
+                android:padding="8dip"
+                android:paddingLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text='@{comment.childCount}'
+                android:textColor="@android:color/secondary_text_dark"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/actions_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bordered"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Upvote"
+                android:src="@drawable/ic_thumb_up"
+                android:onClick="@{comment.onUpvote}"
+                />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Downvote"
+                android:src="@drawable/ic_thumb_down"
+                android:onClick="@{comment.onDownvote}"
+                />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_message"
+                android:onClick="@{comment.onReply}"
+                />
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_link"
+                android:onClick="@{comment.onShare}"
+                />
+
+        </LinearLayout>
+
+    </team4.howest.be.androidapp.view.WrapContentHeightViewPager>
+</layout>

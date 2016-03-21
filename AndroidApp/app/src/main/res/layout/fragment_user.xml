@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team4.howest.be.androidapp.view.UserFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/user_name"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/user_profile_picture"
+        android:src="@drawable/house"
+        android:layout_marginStart="0dp"
+        android:layout_below="@id/user_name" />
+
+
+    <!-- TEXT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submission points"
+        android:id="@+id/textView"
+        android:layout_below="@+id/user_name"
+        android:layout_toEndOf="@+id/user_profile_picture"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment points"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submission votes"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment votes"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_submission_points_up"
+        android:layout_alignTop="@id/textView"
+        android:layout_marginStart="190dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3456"
+        android:id="@+id/user_submission_points_sum"
+        android:layout_alignTop="@id/user_submission_points_up"
+        android:layout_marginStart="210dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_submission_points_down"
+        android:layout_alignTop="@id/user_submission_points_sum"
+        android:layout_marginStart="230dp" />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_comment_points_up"
+        android:layout_alignStart="@id/user_submission_points_up"
+        android:layout_below="@+id/user_submission_points_up" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3456"
+        android:id="@+id/user_comment_points_sum"
+        android:layout_alignStart="@id/user_submission_points_sum"
+        android:layout_below="@+id/user_submission_points_sum" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_comment_points_down"
+        android:layout_alignStart="@id/user_submission_points_down"
+        android:layout_below="@+id/user_submission_points_down" />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_submission_votes_up"
+        android:layout_alignStart="@id/user_comment_points_up"
+        android:layout_below="@+id/user_comment_points_up" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3456"
+        android:id="@+id/user_submission_votes_sum"
+        android:layout_alignStart="@id/user_comment_points_sum"
+        android:layout_below="@+id/user_comment_points_sum" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_submission_votes_down"
+        android:layout_alignStart="@id/user_comment_points_down"
+        android:layout_below="@+id/user_comment_points_down" />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_comment_votes_up"
+        android:layout_alignStart="@id/user_submission_votes_up"
+        android:layout_below="@+id/user_submission_votes_up" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3456"
+        android:id="@+id/user_comment_votes_sum"
+        android:layout_alignStart="@id/user_submission_votes_sum"
+        android:layout_below="@+id/user_submission_votes_sum" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/user_comment_votes_down"
+        android:layout_alignStart="@id/user_submission_votes_down"
+        android:layout_below="@+id/user_submission_votes_down" />
+
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/user_tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/primaryColorDark"
+            android:textColor="#000"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/user_profile_picture"
+            android:layout_alignParentStart="true" />
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

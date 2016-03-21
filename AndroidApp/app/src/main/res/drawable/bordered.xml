@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <solid android:color="@color/cardBackgroundNearBlack"></solid>
+    <stroke
+        android:width="1dip"
+        android:color="@android:color/white" />
+</shape>
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/black" />
+        </shape>
+    </item>
+    <item android:top="1dip">
+    </item>
+    <item android:bottom="1dip">
+    </item>
+</layer-list>-->
